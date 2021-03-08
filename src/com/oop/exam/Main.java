@@ -7,6 +7,7 @@ import com.oop.exam.model.Review;
 import com.oop.exam.model.User;
 
 import com.oop.exam.service.MovieManager;
+import com.oop.exam.service.User;
 
 import java.util.Arrays;
 import java.util.Collections;
