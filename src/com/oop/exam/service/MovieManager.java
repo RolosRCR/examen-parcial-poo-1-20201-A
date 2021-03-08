@@ -15,7 +15,9 @@ private String name;
         return movies;
     }
     public Movie findMovie (String title){for (Movie movie : movies) {if(movie.getTitle()==title)return movie;}
-    public void addMovie(Movie movie){
-    movies.add(movie);}
+
+    public void addMovie(Movie Movie movie;
+        movie) {
+        movies.add(movie);
     }
 }

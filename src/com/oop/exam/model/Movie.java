@@ -1,11 +1,11 @@
-package com.oop.exam.service;
+package com.oop.exam.model;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Movie {
     private String title;
-    private ArrayList<Review> review;
+    private ArrayList<Review> reviews;
     private int year;
     private String director;
     private List<String> actors;
@@ -22,7 +22,7 @@ public class Movie {
         this.director=director;
     }
     public void addReview(Review r){
-        review.add(r);
+        reviews.add(r);
     }
 
     public String getTitle() {
@@ -30,10 +30,10 @@ public class Movie {
     }
 
     public ArrayList<Review> getReview() {
-        return review;
+        return reviews;
     }
 
-    public String getYear() {
+    public int getYear() {
         return year;
     }
 
@@ -54,7 +54,7 @@ public class Movie {
     }
 
     public void setReview(ArrayList<Review> review) {
-        this.review = review;
+        this.reviews = review;
     }
 
     public void setYear(int year) {
@@ -69,15 +69,23 @@ public class Movie {
         this.actors = actors;
     }
 
-    public void setPlataforms(List<Platforms> plataforms) {
-        this.plataforms = plataforms;
-    }
-
     public void setSynopsis(String synopsis) {
         this.synopsis = synopsis;
     }
 
     public String getSynopsis() {
         return synopsis;
+    }
+
+    public List<Platform> getPlatforms() {
+        return plataforms;
+    }
+
+    public CharSequence getReviews() {
+        return review;
+    }
+
+    public void setPlatforms(List<Platform> singletonList) {
+        this.plataforms = singletonList;
     }
 }

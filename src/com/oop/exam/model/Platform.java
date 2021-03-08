@@ -1,4 +1,4 @@
-package com.oop.exam.service;
+package com.oop.exam.model;
 
 public class Platform {
     private String name;
